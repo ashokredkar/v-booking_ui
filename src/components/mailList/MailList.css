@@ -1,0 +1,36 @@
+.mailList{
+    background: var(--color-primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.mailList .mailComponent{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.mailList .mailComponent input{
+    padding: 1rem;
+    border-radius: 25px;
+    width: 40%;
+    margin-right: 1rem;
+}
+
+@media screen and (max-width: 700px) {
+    .mailList .mailComponent{
+        flex-direction: column;
+    }
+    .mailList .mailComponent input{
+        margin-bottom: 1rem;
+        width: 80%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .mailList .mailComponent input{
+        width: 100%;
+    }
+}

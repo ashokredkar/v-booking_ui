@@ -1,0 +1,93 @@
+.itemCard{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    border: 1px solid rgb(212, 212, 212);
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+.itemCard .cardImage{
+    flex: 1.2;
+}
+.itemCard .cardImage img{
+    width: 100%;
+    height: 180px;
+}
+
+.itemCard .cardMiddle{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.itemCard .cardMiddle h2{
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+}
+.itemCard .cardMiddle span{
+    font-size: 13px;
+    font-weight: 500;
+}
+.itemCard .cardMiddle .tag{
+    background: var(--color-tertiary);
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 0.2rem 0.5rem;
+    margin: 0.4rem 0;
+}
+.itemCard .cardMiddle h4{
+    color: var(--color-tertiary);
+}
+
+.itemCard .cardRight{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.itemCard .cardRight span{
+    font-size: 13px;
+    font-weight: 300;
+}
+.itemCard .cardRight .top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.itemCard .cardRight .top > div{
+    background: var(--color-primary);
+    border-radius: 5px;
+    padding: 0.2rem;
+    color: white;
+}
+.itemCard .cardRight .bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.itemCard .cardRight .bottom #price{
+    font-size: 25px;
+    font-weight: 500;
+}
+.itemCard .cardRight .bottom button{
+    width: 100%;
+    margin: 0.3rem 0;
+}
+
+
+@media screen and (max-width: 770px) {
+    .itemCard{
+        flex-direction: column;
+        align-items: center;
+    }
+    /* .itemCard .cardRight .bottom{
+        flex-direction: row;
+    } */
+}

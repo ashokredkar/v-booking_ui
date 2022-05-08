@@ -1,0 +1,137 @@
+.hotel{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.hotel .hotelHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+.imageSlider{
+    height: 100vh;
+    width: 98.75vw;
+    background: rgba(0, 0, 0, 0.766);
+    position: sticky;
+    top: 0%;
+    left: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 101;
+}
+.imageSlider .closeBtn{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+}
+.imageSlider .closeBtn,
+.imageSlider .leftBtn,
+.imageSlider .rightBtn{
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+    margin: 2rem;
+}
+.imageSlider .openedImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+.imageSlider .openedImg img{
+    width: 100%;
+}
+
+.hotel span{
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: rgb(82, 82, 82);
+}
+.hotel .location{
+    color: var(--color-primary);
+}
+.hotel .perk{
+    color: var(--color-tertiary);
+}
+
+.hotel .gallery{
+    margin: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.hotel .gallery .galleryImage{
+    width: 33%;
+}
+.hotel .gallery .galleryImage img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.hotel .hotelBottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 2rem;
+}
+.hotel .hotelBottom .info{
+    flex: 2.2;
+}
+.hotel .hotelBottom .info h2{
+    margin-bottom: 0.5rem;
+}
+.hotel .hotelBottom .info p{
+    text-align: justify;
+}
+.hotel .hotelBottom .bottomCard{
+    flex: 1;
+    background-color: var(--color-tertiary);
+    padding: 2rem 1rem;
+    border-radius: 15px;
+}
+.hotel .hotelBottom .bottomCard h2,
+.hotel .hotelBottom .bottomCard p,
+.hotel .hotelBottom .bottomCard span{
+    margin-bottom: 1rem;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+}
+.hotel .hotelBottom .bottomCard button{
+    background: var(--color-tertiary);
+    color: white;
+    outline: 1px solid white;
+    border: 1px solid var(--color-tertiary);
+    margin: 1rem 0;
+}
+.hotel .hotelBottom .bottomCard button:hover{
+    background: white;
+    color: var(--color-tertiary);
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .hotel .hotelHeader{
+        flex-direction: column;
+    }
+    .hotel .hotelBottom{
+        flex-direction: column;
+    }
+    .hotel .hotelHeader button{
+        margin-top: 1rem;
+    }
+    .hotel .gallery{
+        flex-direction: column;
+    }
+    .hotel .gallery .galleryImage{
+        width: 100%;
+    }
+}

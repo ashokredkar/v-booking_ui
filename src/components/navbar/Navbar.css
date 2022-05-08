@@ -1,0 +1,109 @@
+.nav{
+    background: var(--color-primary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 6rem;
+    position: sticky;
+    top: 0%;
+    z-index: 100;
+}
+.nav .logo{
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+}
+.nav .login{
+    display: flex;
+    align-items: center;
+}
+.nav .login button{
+    margin-left: 1rem;
+    color: var(--color-primary);
+    background: white;
+    font-weight: 700;
+}
+.nav .navigation{
+    display: flex;
+    /* display: none; */
+    justify-content: flex-end;
+    align-items: center;
+}
+.navigation .nav-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    margin-left: 2rem;
+    cursor: pointer;
+}
+.navigation .nav-menu:hover{
+    outline: 1px solid white;
+    border-radius: 20px;
+}
+
+.navigation .nav-menu p{
+    display: block;
+    color: white;
+    font-weight: 500;
+}
+
+/* TOGGLE */
+.nav .mobileNav{
+    /* display: flex; */
+    display: none;
+    justify-content: flex-end;
+    align-items: flex-start;
+    transition: 0.5s ease-in;
+}
+.nav .mobileNav .mobileMenu{
+    position: absolute;
+    top: 60px;
+    right: 5rem;
+    display: flex;
+    flex-direction: column;
+    background: var(--color-primary);
+    color: white;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100px;
+}
+.nav .mobileNav .mobileMenu .nav-menu{
+    display: flex;
+    width: 100px;
+    color: var(--color-primary);
+    padding: 0.5rem 1rem;
+}
+
+@media screen and (max-width: 1050px) {
+    .nav{
+        padding: 1rem 2rem;
+    }
+}
+@media screen and (max-width: 880px) {
+    .nav{
+        padding: 1rem;
+    }
+    .navigation .nav-menu{
+        padding: 0.5rem 1rem;
+        margin-left: 0.5rem;
+    }
+    .navigation .nav-menu p{
+        display: none;
+    }
+    .navigation .nav-menu .icon{
+        margin-right: 0;
+    }
+}
+@media screen and (max-width: 500px) {
+    .nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+    }
+    .navigation .nav-menu{
+        padding: 0.7rem;
+    }
+}

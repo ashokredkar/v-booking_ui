@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    margin: 0%;
+    padding: 0%;
+    border: none;
+    outline: none;
+    border-width: 0px;
+
+}
+
+:root {
+
+    --color-gray: rgb(74, 74, 74);
+
+    /* --color-primary: #0036aa;
+    --color-secondary: #0077ff;
+    --color-tertiary: rgb(255, 71, 61); */
+    
+    --color-primary: rgb(255, 36, 87);
+    --color-secondary: rgb(255, 88, 116);
+    --color-tertiary: rgb(0, 157, 255);
+}
+
+.btn {
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border: 1px solid white;
+    outline: 1px solid var(--color-primary);
+    background: var(--color-secondary);
+    font-weight: 500;
+}
+.btn:hover {
+    background: var(--color-primary);
+    transition: 0.2s ease-in-out;
+}
+
+.section-padding {
+    padding: 3rem 6rem;
+}
+
+.icon {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    margin-right: 0.35rem;
+}
+.active{
+    background: #ffffff;
+    border-radius: 20px;
+}
+p{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 850px) {
+    .section-padding {
+        padding: 2rem 4rem;
+    }
+}
+@media screen and (max-width: 500px) {
+    .section-padding {
+        padding: 1rem 2rem;
+    }
+}
